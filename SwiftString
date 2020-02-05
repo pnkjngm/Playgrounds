@@ -1,0 +1,13 @@
+import UIKit
+
+var str = "pankaj is a good person"
+
+let startDom = str.index(str.startIndex, offsetBy: 4)..<str.endIndex
+
+let endDom = str.startIndex..<str.index(str.endIndex, offsetBy: -3)
+
+let SubRange = (str.index(str.startIndex, offsetBy: 1))...(str.index(str.endIndex, offsetBy: -2))
+
+str[startDom] //is a good person
+str[endDom] //pankaj is a good per
+str[SubRange] //ankaj is a good perso
